@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SkyKings Ultimate – The Spirit of the Disc</title>
+  <meta name="description" content="All about Ultimate Frisbee – rules, photos, highlights, and the love of the flying disc!"/>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --sky: #0ea5e9;
+      --cloud: #f8fafc;
+      --grass: #16a34a;
+      --disc: #ff5e00;
+      --dark: #1e293b;
+    }
+
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to bottom, var(--sky, #7dd3fc);
+      color: var(--dark);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: rgba(255,255,255,0.95);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    }
+
+    .logo {
+      width: 180px;
+      height: 180px;
+      margin: 0 auto 1rem;
+    }
+
+    h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3.5rem;
+      color: var(--disc);
+      text-shadow: 3px 3px 0 #fff;
+    }
+
+    .tagline {
+      font-size: 1.4rem;
+      color: var(--dark);
+      margin-top: 0.5rem;
+    }
+
+    main { padding: 3rem 1rem; max-width: 1200px; margin: 0 auto; }
+
+    .hero {
+      text-align: center;
+      color: white;
+      padding: 6rem 1rem;
+      background: url('https://images.unsplash.com/photo-1626382830009-5d09f99c4be9?q=80&w=2070&auto=format&fit=crop') center/cover no-repeat;
+      border-radius: 20px;
+      margin-bottom: 3rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.5);
+      border-radius: 20px;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .disc-animation {
+      width: 120px;
+      animation: fly 8s infinite linear;
+      position: absolute;
+      top: 20%;
+      left: -150px;
+    }
+
+    @keyframes fly {
+      0%   { transform: translateX(-200px) rotate(0deg); }
+      100% { transform: translateX(calc(100vw + 200px)) rotate(3600deg); }
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .photo {
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+      transition: transform 0.3s;
+    }
+
+    .photo:hover { transform: scale(1.05); }
+
+    .photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: var(--dark);
+      color: white;
+      margin-top: 4rem;
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 2.8rem; }
+      .hero h2 { font-size: 2.2rem; }
+      .disc-animation { width: 80px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <!-- Cool Ultimate Disc Logo (SVG) 
+    <svg class="logo" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="100" cy="100" r="90" fill="#ff5e00" stroke="#fff" stroke-width="8"/>
+      <path d="M100 10 Q 160 70, 190 100 Q 160 130, 100 190 Q 40 130, 10 100 Q 40 70, 100 10 Z" fill="white"/>
+      <circle cx="100" cy="100" r="35" fill="#ff5e00"/>
+      <text x="100" y="115" font-family="Orbitron, sans-serif" font-size="48" fill="white" text-anchor="middle">UD</text>
+      <path d="M30 100 Q100 30, 170 100 Q100 170, 30 100" fill="none" stroke="white" stroke-width="6" opacity="0.6"/>
+    </svg>
+
+    <h1>SkyKings Ultimate</h1>
+    <p class="tagline">Where the disc flies free and the spirit never dies ✌</p>
+  </header>
+
+  <div class="hero">
+    <img src="https://images.unsplash.com/photo-1594737796567-8667d03ee53b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Flying disc" class="disc-animation"/>
+    <div class="hero-content">
+      <h2>No Refs. No Boundaries.<br>Just Pure Ultimate.</h2>
+      <p style="font-size:1.3rem;">Self-officiated • Spirit of the Game • Endless Sky</p>
+    </div>
+  </div>
+
+  <main>
+    <h2 style="text-align:center; font-size:2.8rem; margin-bottom:2rem; color:white; text-shadow: 2px 2px 4px #000;">Epic Moments Gallery</h2>
+
+    <div class="gallery">
+      <div class="photo"><img src="https://images.unsplash.com/photo-1626382830009-5d09f99c4be9?q=80&w=800&auto=format&fit=crop" alt="Layout catch"></div>
+      <div class="photo"><img src="https://images.unsplash.com/photo-1594737629597-4b3d03ef3332?q=80&w=800&auto=format&fit=crop" alt="Hammer throw"></div>
+      <div class="photo"><img src="https://images.unsplash.com/photo-1589987993926-0e6c79e7f2a6?q=80&w=800&auto=format&fit=crop" alt="Ultimate layout dive"></div>
+      <div class="photo"><img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?q=80&w=800&auto=format&fit=crop" alt="Team huddle"></div>
+      <div class="photo"><img src="https://images.unsplash.com/photo-1570549517273-7c8e8e1e7e9d?q=80&w=800&auto=format&fit=crop" alt="Sunset game"></div>
+      <div class="photo"><img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=800&auto=format&fit=crop" alt="Greatest catch"></div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 SkyKings Ultimate – Made with ❤️ and lots of layouts</p>
+    <p style="margin-top:0.5rem;">Spirit of the Game forever ✌</p>
+  </footer>
+
+</body>
+</html>
